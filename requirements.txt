@@ -1,0 +1,26 @@
+# requirements.txt -- Paper 5A analysis environment
+# Pinned from the author's Colab session via `pip freeze` (2026-07-11),
+# supplemented with the gseapy version recorded at time-of-use in
+# STAGE_C_DEVIATIONS.md, Deviation 5 (pathway enrichment, run 2026-06-11).
+
+numpy==2.0.2
+pandas==2.2.2
+scipy==1.16.3
+statsmodels==0.14.6
+matplotlib==3.10.0
+matplotlib-inline==0.2.2
+matplotlib-venn==1.1.2
+openpyxl==3.1.5
+geopandas==1.1.3
+pandas-datareader==0.11.1
+pandas-gbq==0.30.0
+pandas-stubs==2.2.2.240909
+sklearn-pandas==2.2.0
+gseapy==1.2.1
+
+# Optional. Only affects whether Figure 3 hallmark gene labels are
+# auto-arranged or fall back to a fixed 90-degree rotation if the
+# package is absent (see Supplementary Table T10). Not version-pinned;
+# any recent adjustText release is expected to behave equivalently for
+# this use.
+# adjustText
